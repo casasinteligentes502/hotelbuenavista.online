@@ -1,0 +1,17 @@
+HOTEL BUENA VISTA — SIGNATURE PREMIUM
+Versión unificada de PUBLICACION_2026_DOMINIO_CORREGIDO y REV4.
+
+MEJORAS PRINCIPALES
+• Nueva interfaz editorial premium, paleta forestal/crema/dorado y diseño responsive.
+• Formulario bilingüe con nombre completo y teléfono de contacto obligatorios.
+• Validación de teléfono (8–15 dígitos) y nombre (mínimo nombre y apellido).
+• WhatsApp precargado con nombre, teléfono, fechas, huéspedes y alojamiento.
+• Las tarjetas de alojamiento llevan al formulario y seleccionan el tipo de habitación.
+• Sección adicional de experiencias con fotos locales y acceso a álbumes.
+• Más material gráfico de eventos procedente de REV4.
+• Nuevas portadas OG para WhatsApp y Facebook.
+• Redes sociales, SEO local, sitemap, privacidad, términos y dominio conservados.
+• No hay pago ni confirmación automática; el hotel responde personalmente.
+
+INSTALACIÓN
+Descomprimir y subir el contenido del ZIP a la raíz de GitHub Pages. No mezclar manualmente diferentes ZIP de versiones anteriores.

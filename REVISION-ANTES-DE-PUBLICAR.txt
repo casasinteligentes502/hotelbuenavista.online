@@ -1,0 +1,31 @@
+HOTEL BUENA VISTA — REVISIÓN DE PUBLICACIÓN
+Fecha de versión: 9 de noviembre de 2026
+Dominio: https://hotelbuenavista.online
+
+IMPLEMENTADO
+• Canonical, hreflang ES/EN, Open Graph, Twitter, sitemap.xml con lastmod,
+  robots.txt, CNAME y datos estructurados Hotel/WebSite/WebPage.
+• Google Maps: botón vinculado a ficha específica del hotel mediante Place ID.
+• Fotografías locales optimizadas y miniaturas responsivas. Galería principal
+  ampliada con piscina, mirador, gimnasio y otros espacios.
+• Siete galerías de servicios accesibles desde tarjetas, sin saltos y con controles.
+• Carrusel con botón pausar/reanudar, pausa al interactuar y reducción de movimiento.
+• Consulta de reservas por WhatsApp en la misma pestaña, sin ventanas emergentes.
+• Promociones con un solo origen de tarifas/fechas en config.js para ambos idiomas.
+  Precios no confirmados se muestran como "Consultar precio".
+• Páginas informativas de privacidad y condiciones en ambos idiomas.
+
+ANTES DE HACER EL SITIO DEFINITIVO
+1. Configurar DNS y GitHub Pages del dominio y verificar HTTPS. No puede
+   probarse OG de WhatsApp hasta que el sitio esté público.
+2. Pedir al hotel fotografía de interiores de calidad original para cada tipo
+   de habitación o cabaña, idealmente 3–5 por tipo. La actual fotografía
+   romántica es un recorte antiguo de baja resolución.
+3. Solicitar la fecha exacta de finalización de la promoción navideña, confirmar
+   importes y configurar config.js: seasonal.confirmed=true y validUntil.
+4. Confirmar el pin GPS del edificio. El enlace Maps usa la ficha de empresa
+   conocida, pero el iframe aún usa búsqueda; no se incluyó geo inventada.
+5. Confirmar días de atención y tarifas habituales si se desea añadir
+   dayOfWeek y priceRange a JSON-LD.
+6. Revisar textos legales por el responsable comercial si más adelante se
+   añaden pasarelas de pago o formularios con almacenamiento.
