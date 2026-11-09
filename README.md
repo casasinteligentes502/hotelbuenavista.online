@@ -62,3 +62,10 @@ assets/icons/
 ```
 
 **Fecha de actualización:** 9 de noviembre de 2026.
+
+
+## Sección Transporte desde Ciudad de Guatemala
+
+Se añadieron tarjetas en español/inglés para bus exprés (Q145 ida, Q285 ida y vuelta), avioneta (Q995 ida, Q1,800 ida y vuelta) y Uber (Q3,200, alcance por confirmar). Tarifa comunicada por el cliente, no verificada con proveedores. No se garantiza una ruta/vuelo ni la disponibilidad de Uber, ni que las fotografías correspondan al operador. Los cuatro recursos gráficos están optimizados en `assets/img/transporte-*.webp`, sin cargar imágenes externas.
+
+Los botones de cada tarjeta abren una consulta por WhatsApp; el hotel debe confirmar tarifas actualizadas, horarios y el traslado final a Chiantla. Para actualizar la sección, edita los precios en `index.html` y `en/index.html`.
