@@ -931,3 +931,40 @@ html[data-theme=dark] .transport-payment-notice strong{color:#f6eedb}
 html[data-theme=dark] .transport-payment-notice p{color:#d6dfd0}
 html[data-theme=dark] .transport-payment-mark{background:#59462b;color:#fff4d9}
 @media(max-width:650px){.transport-payment-notice{gap:12px;padding:17px 15px;margin:0 0 22px}.transport-payment-notice>div>strong{font-size:15px}.transport-payment-notice p{font-size:12px}}
+
+
+/* Added logo image and transport clarification */
+.brand{gap:0}
+.brand-logo{display:block;width:220px;height:auto;max-width:100%}
+.brand-footer .brand-logo{width:220px}
+.transport-pricing-note{margin:18px 0 0;border:1px solid rgba(25,86,63,.14);background:linear-gradient(135deg,rgba(255,255,255,.98),rgba(247,244,237,.98));border-radius:22px;padding:18px 20px;box-shadow:0 14px 30px rgba(14,41,30,.06)}
+.transport-pricing-note strong{display:block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);margin-bottom:8px}
+.transport-pricing-note p{margin:0;color:var(--muted);line-height:1.7;font-size:14px}
+@media(max-width:1240px){.brand-logo,.brand-footer .brand-logo{width:205px}}
+@media(max-width:680px){.brand-logo,.brand-footer .brand-logo{width:170px}.site-header .brand{max-width:170px}}
+@media(max-width:390px){.brand-logo,.brand-footer .brand-logo{width:156px}.site-header .brand{max-width:156px}}
+html[data-theme=dark] .transport-pricing-note{background:linear-gradient(135deg,rgba(20,34,28,.95),rgba(30,48,40,.95));border-color:rgba(223,189,145,.22)}
+html[data-theme=dark] .transport-pricing-note p{color:#dce5de}
+
+
+/* HOTEL BUENA VISTA — logo oficial responsive, sin desbordamientos */
+.premium-site .site-header .brand{display:inline-flex;align-items:center;justify-content:flex-start;gap:9px;flex:0 0 auto;min-width:0;max-width:225px;height:100%;overflow:visible}
+.premium-site .site-header .brand-crest{display:flex;align-items:center;justify-content:center;flex:0 0 67px;width:67px;height:58px;min-width:0}
+.premium-site .site-header .brand-crest img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.premium-site .site-header .brand-wordmark{min-width:0;display:flex;flex-direction:column;justify-content:center;gap:4px;white-space:nowrap;line-height:1.05;color:#542a1d}
+.premium-site .site-header .brand-wordmark strong{font-family:Georgia,'Times New Roman',serif;font-size:18px;letter-spacing:-.045em;font-weight:700;color:inherit}
+.premium-site .site-header .brand-wordmark small{font:700 10px/1 'Segoe UI',Arial,sans-serif;letter-spacing:.18em;color:inherit}
+.premium-site .brand-footer{display:block!important;max-width:210px}
+.premium-site .brand-footer-logo{display:block;width:205px;max-width:100%;height:auto;filter:brightness(0) invert(1);object-fit:contain}
+.premium-site .transport-pricing-note{padding:22px 26px}
+.premium-site .transport-pricing-note h3{font-family:var(--sans);font-size:16px;font-weight:800;letter-spacing:0;line-height:1.5;text-transform:none;color:var(--forest);margin:0 0 12px}
+.premium-site .transport-pricing-note ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.premium-site .transport-pricing-note li{border-radius:12px;background:rgba(22,58,48,.055);padding:13px 15px;font-size:13px;line-height:1.65;color:var(--ink)}
+.premium-site .transport-pricing-note li strong{display:inline;font-size:inherit;letter-spacing:0;text-transform:none;margin:0;color:var(--forest)}
+html[data-theme=dark] .premium-site .site-header .brand-wordmark{color:#f1dbbd}
+html[data-theme=dark] .premium-site .transport-pricing-note h3,html[data-theme=dark] .premium-site .transport-pricing-note li strong{color:#f0d0a0}
+html[data-theme=dark] .premium-site .transport-pricing-note li{background:rgba(255,255,255,.075);color:#f0f2ea}
+@media(max-width:1240px){.premium-site .site-header .brand{max-width:190px;gap:6px}.premium-site .site-header .brand-crest{flex-basis:51px;width:51px;height:48px}.premium-site .site-header .brand-wordmark strong{font-size:16px}}
+@media(max-width:1120px){.premium-site .site-header .brand{max-width:175px}.premium-site .site-header .brand-crest{flex-basis:48px;width:48px;height:45px}.premium-site .site-header .brand-wordmark strong{font-size:15px}.premium-site .transport-pricing-note ul{grid-template-columns:1fr}}
+@media(max-width:680px){.premium-site .site-header .brand{max-width:169px;gap:4px;overflow:hidden}.premium-site .site-header .brand-crest{flex:0 0 49px;width:49px;height:43px}.premium-site .site-header .brand-wordmark strong{font-size:15px}.premium-site .site-header .brand-wordmark small{font-size:8px;letter-spacing:.15em}.premium-site .transport-pricing-note{padding:18px}.premium-site .transport-pricing-note h3{font-size:15px}.premium-site .transport-pricing-note li{padding:10px 12px}}
+@media(max-width:380px){.premium-site .site-header .brand{max-width:144px}.premium-site .site-header .brand-crest{flex-basis:37px;width:37px;height:36px}.premium-site .site-header .brand-wordmark strong{font-size:13px}.premium-site .site-header .brand-wordmark small{font-size:7px}}
