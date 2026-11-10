@@ -69,3 +69,7 @@ assets/icons/
 Se añadieron tarjetas en español/inglés para bus exprés (Q145 ida, Q285 ida y vuelta), avioneta (Q995 ida, Q1,800 ida y vuelta) y Uber (Q3,200, alcance por confirmar). Tarifa comunicada por el cliente, no verificada con proveedores. No se garantiza una ruta/vuelo ni la disponibilidad de Uber, ni que las fotografías correspondan al operador. Los cuatro recursos gráficos están optimizados en `assets/img/transporte-*.webp`, sin cargar imágenes externas.
 
 Los botones de cada tarjeta abren una consulta por WhatsApp; el hotel debe confirmar tarifas actualizadas, horarios y el traslado final a Chiantla. Para actualizar la sección, edita los precios en `index.html` y `en/index.html`.
+
+
+## Política de pago del transporte (actualización)
+Se añadió un aviso visible encima de las tarjetas de transporte en español e inglés: pago anticipado obligatorio y no reembolsable según las condiciones comunicadas por el propietario. También se menciona en las páginas de términos y en los mensajes de consulta por WhatsApp. La nota se refiere al transporte, no a políticas de reembolso de alojamiento.

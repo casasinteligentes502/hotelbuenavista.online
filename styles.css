@@ -917,3 +917,17 @@ html[data-theme=dark] .transport-action{background:#b9905a;color:#193225}
 @media(max-width:900px){.nav-links{top:75px;max-height:calc(100svh - 75px)}}
 @media(max-width:680px){.nav-links{top:72px;max-height:calc(100svh - 72px)}}
 html[data-theme=dark] .nav-links.is-open{background:#1e362a}
+
+
+/* Condición comercial importante del transporte: visible antes de elegir tarifa */
+.transport-payment-notice{display:flex;gap:17px;align-items:flex-start;padding:20px 23px;margin:-12px 0 28px;background:#fffdfa;border:1px solid #d7b893;border-left:4px solid #a57b4b;border-radius:12px;box-shadow:0 7px 22px rgba(33,46,32,.055)}
+.transport-payment-mark{flex:0 0 29px;width:29px;height:29px;display:grid;place-items:center;border-radius:50%;font:800 17px/1 var(--sans);background:#efdcc4;color:#57391e}
+.transport-payment-notice strong{color:#3a3427}
+.transport-payment-notice>div>strong{display:block;font-size:16px;line-height:1.45;margin:1px 0 5px}
+.transport-payment-notice p{margin:0;font-size:13px;line-height:1.7;color:#595950}
+.transport-payment-notice p strong{font-weight:800}
+html[data-theme=dark] .transport-payment-notice{background:#253b2e;border-color:#998260;border-left-color:#d6b487}
+html[data-theme=dark] .transport-payment-notice strong{color:#f6eedb}
+html[data-theme=dark] .transport-payment-notice p{color:#d6dfd0}
+html[data-theme=dark] .transport-payment-mark{background:#59462b;color:#fff4d9}
+@media(max-width:650px){.transport-payment-notice{gap:12px;padding:17px 15px;margin:0 0 22px}.transport-payment-notice>div>strong{font-size:15px}.transport-payment-notice p{font-size:12px}}
