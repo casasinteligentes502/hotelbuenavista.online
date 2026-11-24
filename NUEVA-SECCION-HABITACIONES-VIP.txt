@@ -1,0 +1,12 @@
+HOTEL BUENA VISTA – ACTUALIZACIÓN HABITACIONES VIP – 24/11/2026
+
+Cambios principales:
+1. Sección VIP con cinco fotografías del cliente.
+2. Video de 29 segundos en formato MP4 optimizado, hospedado localmente.
+3. Opción VIP en el formulario de consulta de fechas y reservas por WhatsApp.
+4. Español e inglés, conservando modos claro y oscuro.
+5. Galería VIP con navegación y botón de cierre.
+
+NOTA: no se han añadido tarifas, capacidades ni amenidades que no hayan sido confirmadas.
+
+PUBLICACIÓN: extraer el ZIP y copiar todo su CONTENIDO a la raíz del repositorio de GitHub Pages.

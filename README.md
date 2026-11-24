@@ -73,3 +73,14 @@ Los botones de cada tarjeta abren una consulta por WhatsApp; el hotel debe confi
 
 ## Política de pago del transporte (actualización)
 Se añadió un aviso visible encima de las tarjetas de transporte en español e inglés: pago anticipado obligatorio y no reembolsable según las condiciones comunicadas por el propietario. También se menciona en las páginas de términos y en los mensajes de consulta por WhatsApp. La nota se refiere al transporte, no a políticas de reembolso de alojamiento.
+
+
+## Actualización 24/11/2026 — Habitaciones VIP
+
+- Se agregó una sección **Habitaciones VIP** en `index.html` y `en/index.html` después de los tres alojamientos existentes, con cinco fotografías reales y un video alojado localmente.
+- Las fotografías se guardaron en `assets/img/vip-*.webp`, con miniaturas en `assets/img/thumb/`.
+- El video se encuentra en `assets/video/recorrido-habitaciones-vip.mp4`; se reproduce solo si el visitante pulsa Play (`controls`, `preload=none`), con portada local.
+- El formulario de consulta de disponibilidad incluye la opción *Habitación VIP / VIP room* y envía esta selección por WhatsApp junto con nombre completo, teléfono, fechas y huéspedes. No almacena esos datos en un servidor.
+- La galería VIP utiliza las flechas y el botón Cerrar del visor existente, pero mantiene su navegación separada de la galería general.
+- Confirmar directamente con el hotel las tarifas, capacidad, características y disponibilidad específicas de las habitaciones VIP.
+- Todos los archivos multimedia se sirven desde el propio repositorio, sin dependencia de Instagram ni de reproductores externos.

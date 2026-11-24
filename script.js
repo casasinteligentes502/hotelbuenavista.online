@@ -8,12 +8,12 @@
   const copy = isEN ? {
     openMenu:'Open menu',closeMenu:'Close menu',missing:'Please choose arrival and departure dates.',dates:'Check-out must be after check-in.',
     ok:'Your WhatsApp message is ready. Please send it to the hotel to inquire about availability.',
-    people:'guests',one:'guest', any:'Any option', alpine:'Alpine cabin', family:'Family cabin',couple:'Couples room',
+    people:'guests',one:'guest', any:'Any option', alpine:'Alpine cabin', family:'Family cabin',couple:'Couples room',vip:'VIP room',
     missingName:'Enter your full name.', invalidPhone:'Enter a valid phone number, with country code if needed (8 to 15 digits).'
   } : {
     openMenu:'Abrir menú',closeMenu:'Cerrar menú',missing:'Selecciona las fechas de tu visita.',dates:'La salida debe ser posterior a la llegada.',
     ok:'Se preparó tu consulta en WhatsApp. Envíala al hotel para confirmar disponibilidad.',
-    people:'personas',one:'persona',any:'Cualquier opción', alpine:'Cabaña alpina',family:'Cabaña familiar',couple:'Habitación para parejas',
+    people:'personas',one:'persona',any:'Cualquier opción', alpine:'Cabaña alpina',family:'Cabaña familiar',couple:'Habitación para parejas',vip:'Habitación VIP',
     missingName:'Escribe tu nombre completo.', invalidPhone:'Ingresa un número de teléfono válido, con código de país si corresponde (de 8 a 15 dígitos).'
   };
   // Persist one accessible visual theme across both language pages.
@@ -134,7 +134,7 @@
     message.textContent = '';
   }));
   // Selecting an accommodation takes guests to the same personalized inquiry.
-  $$('.stay-action[data-select-lodging]').forEach(link => {
+  $$('[data-select-lodging]').forEach(link => {
     link.addEventListener('click', () => {
       $('#tipo-alojamiento').value = link.dataset.selectLodging || '';
     });
@@ -219,10 +219,19 @@
   });
 
   // Galería ampliable con navegación por teclado.
-  const galleryData = $$('.gallery-tile').map(tile => {
+  // Each photo collection has its own sequence. VIP photos do not mix with the main gallery.
+  const galleryGroups = { main: [], vip: [] };
+  const photoTriggers = $$('.gallery-tile, .vip-photo');
+  photoTriggers.forEach(tile => {
+    const group = tile.classList.contains('vip-photo') ? 'vip' : 'main';
     const image = $('img', tile);
-    return [tile.dataset.fullSrc || image?.getAttribute('src') || '', image?.alt || ''];
+    const images = galleryGroups[group];
+    const index = images.length;
+    images.push([tile.dataset.fullSrc || image?.getAttribute('src') || '', image?.alt || '']);
+    tile.dataset.galleryGroup = group;
+    tile.dataset.galleryIndex = String(index);
   });
+  let galleryData = galleryGroups.main;
   const lightbox = $('#lightbox');
   const lightboxImage = $('#lightbox-image');
   const lightboxCaption = $('#lightbox-caption');
@@ -234,7 +243,8 @@
     lightboxImage.alt = caption;
     lightboxCaption.textContent = caption;
   };
-  const openLightbox = index => {
+  const openLightbox = (index, group = "main") => {
+    galleryData = galleryGroups[group] || galleryGroups.main;
     galleryIndex = index;
     previouslyFocused = document.activeElement;
     renderLightbox();
@@ -253,7 +263,7 @@
     galleryIndex = (galleryIndex + direction + galleryData.length) % galleryData.length;
     renderLightbox();
   };
-  $$('.gallery-tile').forEach(button => button.addEventListener('click', () => openLightbox(Number(button.dataset.galleryIndex))));
+  photoTriggers.forEach(button => button.addEventListener('click', () => openLightbox(Number(button.dataset.galleryIndex), button.dataset.galleryGroup)));
   $('.lightbox-close').addEventListener('click', closeLightbox);
   $('.lightbox-prev').addEventListener('click', () => moveLightbox(-1));
   $('.lightbox-next').addEventListener('click', () => moveLightbox(1));

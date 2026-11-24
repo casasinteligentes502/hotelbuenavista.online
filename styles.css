@@ -968,3 +968,40 @@ html[data-theme=dark] .premium-site .transport-pricing-note li{background:rgba(2
 @media(max-width:1120px){.premium-site .site-header .brand{max-width:175px}.premium-site .site-header .brand-crest{flex-basis:48px;width:48px;height:45px}.premium-site .site-header .brand-wordmark strong{font-size:15px}.premium-site .transport-pricing-note ul{grid-template-columns:1fr}}
 @media(max-width:680px){.premium-site .site-header .brand{max-width:169px;gap:4px;overflow:hidden}.premium-site .site-header .brand-crest{flex:0 0 49px;width:49px;height:43px}.premium-site .site-header .brand-wordmark strong{font-size:15px}.premium-site .site-header .brand-wordmark small{font-size:8px;letter-spacing:.15em}.premium-site .transport-pricing-note{padding:18px}.premium-site .transport-pricing-note h3{font-size:15px}.premium-site .transport-pricing-note li{padding:10px 12px}}
 @media(max-width:380px){.premium-site .site-header .brand{max-width:144px}.premium-site .site-header .brand-crest{flex-basis:37px;width:37px;height:36px}.premium-site .site-header .brand-wordmark strong{font-size:13px}.premium-site .site-header .brand-wordmark small{font-size:7px}}
+
+
+/* HOTEL BUENA VISTA · VIP feature 24 Nov 2026 */
+.premium-site .vip-feature{margin:52px 0 0;display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,1fr);gap:0;background:linear-gradient(135deg,#17352c 0%,#244638 57%,#142d26 100%);color:#fff9ed;border-radius:25px;overflow:hidden;box-shadow:0 28px 70px rgba(11,33,25,.17)}
+.premium-site .vip-gallery-media{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:minmax(320px,410px) 138px;gap:9px;padding:14px;background:#1c3029;min-width:0}
+.premium-site .vip-photo{display:block;position:relative;min-width:0;overflow:hidden;border:0;background:#243b32;border-radius:10px;padding:0;cursor:zoom-in;isolation:isolate}
+.premium-site .vip-photo-1{grid-column:1/-1}
+.premium-site .vip-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 56%;transition:transform .38s ease,filter .38s ease}
+.premium-site .vip-photo-1 img{object-position:center 55%}
+.premium-site .vip-photo-3 img{object-position:center 55%}
+.premium-site .vip-photo-5 img{object-position:center 48%}
+.premium-site .vip-photo:hover img,.premium-site .vip-photo:focus-visible img{transform:scale(1.035);filter:brightness(.90)}
+.premium-site .vip-photo:focus-visible{outline:3px solid #e0b97e;outline-offset:-3px}
+.premium-site .vip-photo-zoom{position:absolute;right:10px;bottom:10px;width:29px;height:29px;display:grid;place-items:center;background:rgba(255,251,244,.94);border-radius:50%;color:#17352c;font-size:20px;line-height:1;z-index:2;box-shadow:0 5px 17px #10271b3b}
+.premium-site .vip-feature-content{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:40px 36px 32px}
+.premium-site .vip-eyebrow{display:inline-block;letter-spacing:.18em;color:#e9c68f;font-size:11px;font-weight:800;margin:0 0 15px}
+.premium-site .vip-feature-content h3{font-family:var(--serif);font-weight:500;font-size:clamp(34px,3.25vw,48px);line-height:1.12;letter-spacing:-.035em;margin:0 0 12px;color:#fffaf1}
+.premium-site .vip-feature-content h3 em{font-weight:400;color:#dcb886}
+.premium-site .vip-accommodation-name{font-size:17px;color:#ffe7be;font-weight:750;margin-bottom:14px}
+.premium-site .vip-description{color:#e8eee7;font-size:13px;line-height:1.85;margin:0 0 13px}
+.premium-site .vip-highlights{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}
+.premium-site .vip-highlights span{padding:8px 10px;font-size:10px;border:1px solid #ffffff48;border-radius:30px;color:#f7efd9;background:#ffffff12}
+.premium-site .vip-reserve{display:inline-flex;gap:13px;align-items:center;justify-content:center;min-height:47px;border-radius:6px;background:#dfbd84;color:#153429;font-weight:800;font-size:12px;padding:12px 19px;transition:transform .25s,background .25s}
+.premium-site .vip-reserve:hover{background:#f5d3a0;transform:translateY(-2px)}
+.premium-site .vip-reserve .icon{height:16px;width:16px}
+.premium-site .vip-reel{margin-top:22px;display:grid;grid-template-columns:minmax(0,1fr) 126px;gap:15px;align-items:center;width:100%;background:rgba(3,18,13,.27);border:1px solid #ffffff24;border-radius:16px;padding:11px 12px}
+.premium-site .vip-reel-intro span{font-size:9px;letter-spacing:.13em;color:#d4b78b;font-weight:800;display:block;margin-bottom:8px}
+.premium-site .vip-reel-intro strong{display:block;font-family:var(--serif);font-size:22px;font-weight:500;line-height:1.15;color:#fffdf6}
+.premium-site .vip-reel-intro p{font-size:11px;line-height:1.65;color:#dbe3db;margin:8px 0 0}
+.premium-site .vip-video{background:#102720;display:block;width:126px;height:196px;object-fit:contain;border-radius:10px;max-width:100%;}
+.premium-site .vip-note{color:#d1e0d5;font-size:10px;line-height:1.65;margin:16px 0 0}
+.premium-site .vip-feature [hidden]{display:none}
+@media(max-width:1040px){.premium-site .vip-feature{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.premium-site .vip-gallery-media{grid-template-rows:360px 115px}.premium-site .vip-feature-content{padding:30px 26px 26px}.premium-site .vip-reel{grid-template-columns:minmax(0,1fr) 110px}.premium-site .vip-video{width:110px;height:171px}}
+@media(max-width:800px){.premium-site .vip-feature{grid-template-columns:1fr}.premium-site .vip-gallery-media{grid-template-rows:380px 116px}.premium-site .vip-feature-content{padding:32px}.premium-site .vip-reel{grid-template-columns:minmax(0,1fr) 130px}.premium-site .vip-video{width:130px;height:200px}}
+@media(max-width:500px){.premium-site .vip-feature{border-radius:16px;margin-top:32px}.premium-site .vip-gallery-media{grid-template-rows:285px 82px;gap:5px;padding:7px}.premium-site .vip-photo{border-radius:6px}.premium-site .vip-feature-content{padding:26px 21px}.premium-site .vip-feature-content h3{font-size:36px}.premium-site .vip-reel{gap:11px;grid-template-columns:minmax(0,1fr) 106px}.premium-site .vip-video{width:106px;height:174px}.premium-site .vip-reel-intro strong{font-size:20px}.premium-site .vip-photo-zoom{width:24px;height:24px;bottom:6px;right:6px;font-size:16px}}
+@media(max-width:350px){.premium-site .vip-gallery-media{grid-template-rows:230px 68px}.premium-site .vip-feature-content h3{font-size:30px}.premium-site .vip-reel{grid-template-columns:minmax(0,1fr) 92px}.premium-site .vip-video{width:92px;height:158px}}
+@media(prefers-reduced-motion:reduce){.premium-site .vip-photo img,.premium-site .vip-reserve{transition:none}}
